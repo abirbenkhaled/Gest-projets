@@ -6,6 +6,7 @@ import { ProjetComponent } from './projet/projet.component';
 import { ProfilComponent } from './profil/profil.component';
 
 import { WorkspaceComponent } from './workspace/workspace.component';
+import { ListUserComponent } from './list-user/list-user.component';
 
 import { AdminListProjetComponent } from './admin-list-projet/admin-list-projet.component';
 
@@ -18,12 +19,17 @@ const routes:Routes = [
 
 
 
+
   {path:'profil',component:ProfilComponent},
 
 
   {path:'workspace', component:WorkspaceComponent},
 
+
   {path:'admin-list-projet' , component:AdminListProjetComponent},
+
+  {path:'ListUser',component:ListUserComponent}
+
 
   {path:'**' , component:NotFoundComponent}
 ];
