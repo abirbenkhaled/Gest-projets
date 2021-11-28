@@ -1,13 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ProjetComponent } from './projet/projet.component';
 
 
 const routes:Routes = [
-{path:'projetComponent' }
-
+  {path:'projet',component:ProjetComponent},
 ]
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+
+  
+  
+  @NgModule({
+    imports:[RouterModule.forRoot(routes)],
+    exports:[RouterModule],
+    declarations: [
+     ProjetComponent,
+    ]
 })
 export class RoutingappModule { }
