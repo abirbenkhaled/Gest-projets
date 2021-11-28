@@ -18,9 +18,12 @@ const routes:Routes = [
   {path:'projet',component:ProjetComponent},
 
 
-
-
   {path:'profil',component:ProfilComponent},
+
+
+
+
+
 
 
   {path:'workspace', component:WorkspaceComponent},
