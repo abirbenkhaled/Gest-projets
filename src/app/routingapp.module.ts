@@ -12,6 +12,14 @@ import { WorkspaceComponent } from './workspace/workspace.component';
 const routes:Routes = [
   {path:'projet',component:ProjetComponent},
 
+
+
+  {path:'profil',component:ProjetComponent},
+
+
+  {path:'workspace', component:WorkspaceComponent}
+];
+
   {path:'profil',component:ProjetComponent},
 
   {path:'workspace', component:WorkspaceComponent}
@@ -24,7 +32,6 @@ const routes:Routes = [
 
 
 
-  
   
   @NgModule({
     imports:[RouterModule.forRoot(routes)],
