@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { ProjetComponent } from './projet/projet.component';
+import { ProfilComponent } from './profil/profil.component';
 
 
 const routes:Routes = [
   {path:'projet',component:ProjetComponent},
-]
+  {path:'profil',component:ProjetComponent}
+];
 
   
   
@@ -14,6 +17,7 @@ const routes:Routes = [
     exports:[RouterModule],
     declarations: [
      ProjetComponent,
+     ProfilComponent
     ]
 })
 export class RoutingappModule { }
