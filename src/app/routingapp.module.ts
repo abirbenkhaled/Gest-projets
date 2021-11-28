@@ -9,6 +9,8 @@ import { WorkspaceComponent } from './workspace/workspace.component';
 
 import { AdminListProjetComponent } from './admin-list-projet/admin-list-projet.component';
 
+import { NotFoundComponent } from './not-found/not-found.component';
+
 
 
 const routes:Routes = [
@@ -21,7 +23,9 @@ const routes:Routes = [
 
   {path:'workspace', component:WorkspaceComponent},
 
-  {path:'admin-list-projet' , component:AdminListProjetComponent}
+  {path:'admin-list-projet' , component:AdminListProjetComponent},
+
+  {path:'**' , component:NotFoundComponent}
 ];
 
 
