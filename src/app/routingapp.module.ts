@@ -7,8 +7,11 @@ import { ProfilComponent } from './profil/profil.component';
 
 import { WorkspaceComponent } from './workspace/workspace.component';
 import { ListUserComponent } from './list-user/list-user.component';
+import { ProjetListCardsComponent } from './projet-list-cards/projet-list-cards.component';
 
 import { AdminListProjetComponent } from './admin-list-projet/admin-list-projet.component';
+
+
 
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -20,12 +23,6 @@ const routes:Routes = [
 
   {path:'profil',component:ProfilComponent},
 
-
-
-
-
-
-
   {path:'workspace', component:WorkspaceComponent},
 
 
@@ -33,7 +30,7 @@ const routes:Routes = [
 
   {path:'ListUser',component:ListUserComponent},
 
-
+  {path:'projet-list-cards',component:ProjetListCardsComponent},
   {path:'**' , component:NotFoundComponent}
 ];
 
