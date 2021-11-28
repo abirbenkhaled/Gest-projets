@@ -7,6 +7,8 @@ import { ProfilComponent } from './profil/profil.component';
 
 import { WorkspaceComponent } from './workspace/workspace.component';
 
+import { AdminListProjetComponent } from './admin-list-projet/admin-list-projet.component';
+
 
 
 const routes:Routes = [
@@ -17,10 +19,10 @@ const routes:Routes = [
   {path:'profil',component:ProfilComponent},
 
 
-  {path:'workspace', component:WorkspaceComponent}
+  {path:'workspace', component:WorkspaceComponent},
+
+  {path:'admin-list-projet' , component:AdminListProjetComponent}
 ];
-
-
 
 
 
