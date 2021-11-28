@@ -28,7 +28,7 @@ const routes:Routes = [
 
   {path:'admin-list-projet' , component:AdminListProjetComponent},
 
-  {path:'ListUser',component:ListUserComponent}
+  {path:'ListUser',component:ListUserComponent},
 
 
   {path:'**' , component:NotFoundComponent}
