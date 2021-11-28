@@ -8,6 +8,8 @@ import { ProfilComponent } from './profil/profil.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
 import { ListUserComponent } from './list-user/list-user.component';
 
+import { AdminListProjetComponent } from './admin-list-projet/admin-list-projet.component';
+
 
 
 const routes:Routes = [
@@ -20,10 +22,14 @@ const routes:Routes = [
 
 
   {path:'workspace', component:WorkspaceComponent},
+
   {path:'ListUser',component:ListUserComponent}
 ];
 
 
+
+  {path:'admin-list-projet' , component:AdminListProjetComponent}
+];
 
 
 
