@@ -14,16 +14,15 @@ const routes:Routes = [
 
 
 
-  {path:'profil',component:ProjetComponent},
+  {path:'profil',component:ProfilComponent},
 
 
   {path:'workspace', component:WorkspaceComponent}
 ];
 
-  {path:'profil',component:ProjetComponent},
 
-  {path:'workspace', component:WorkspaceComponent}
-];
+
+
 
  
 
