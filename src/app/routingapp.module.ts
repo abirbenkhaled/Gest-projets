@@ -13,11 +13,23 @@ const routes:Routes = [
   {path:'projet',component:ProjetComponent},
 
 
+
   {path:'profil',component:ProjetComponent},
 
 
   {path:'workspace', component:WorkspaceComponent}
 ];
+
+  {path:'profil',component:ProjetComponent},
+
+  {path:'workspace', component:WorkspaceComponent}
+];
+
+ 
+
+
+ 
+
 
 
   
