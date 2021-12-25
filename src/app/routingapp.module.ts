@@ -35,23 +35,6 @@ const routes:Routes = [
   {path:'admin-list-projet' , component:AdminListProjetComponent}
 ];
 
-
-  {path:'admin-list-projet' , component:AdminListProjetComponent},
-
-
-  
-
-
-
-
-  {path:'ListUser',component:ListUserComponent},
-
-
-
-  {path:'**' , component:NotFoundComponent}
-];
- 
-
   
   @NgModule({
     imports:[RouterModule.forRoot(routes)],
