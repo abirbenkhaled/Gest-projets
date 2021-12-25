@@ -15,11 +15,16 @@ import { AdminListProjetComponent } from './admin-list-projet/admin-list-projet.
 
 import { NotFoundComponent } from './not-found/not-found.component';
 
+import { HomeComponent } from './home/home.component';
+
 
 
 const routes:Routes = [
+  {path:'home',component:HomeComponent},
+  
+  {path:'',redirectTo:'/home',pathMatch:'full'},
   {path:'projet',component:ProjetComponent},
-
+  {path:'projet-list-cards',component:ProjetListCardsComponent},
 
   {path:'profil',component:ProfilComponent},
 
@@ -30,10 +35,10 @@ const routes:Routes = [
 
   {path:'ListUser',component:ListUserComponent},
 
-  {path:'projet-list-cards',component:ProjetListCardsComponent},
+
   {path:'**' , component:NotFoundComponent}
 ];
-
+ 
 
   
   @NgModule({
@@ -41,7 +46,13 @@ const routes:Routes = [
     exports:[RouterModule],
     declarations: [
      ProjetComponent,
-     ProfilComponent
+     ProfilComponent,
+     WorkspaceComponent,
+     HomeComponent,
+     NotFoundComponent,
+     ListUserComponent,
+     AdminListProjetComponent,
+     ProjetListCardsComponent
     ]
 })
 export class RoutingappModule { }
