@@ -23,13 +23,13 @@ const routes:Routes = [
 
   {path:'workspace', component:WorkspaceComponent},
 
-  {path:'ListUser',component:ListUserComponent}
-];
-
-
-
+  {path:'ListUser',component:ListUserComponent},
   {path:'admin-list-projet' , component:AdminListProjetComponent}
 ];
+
+
+
+  
 
 
 
