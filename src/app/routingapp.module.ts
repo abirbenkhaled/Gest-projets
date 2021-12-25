@@ -31,9 +31,21 @@ const routes:Routes = [
   {path:'workspace', component:WorkspaceComponent},
 
 
+  {path:'ListUser',component:ListUserComponent},
+  {path:'admin-list-projet' , component:AdminListProjetComponent}
+];
+
+
   {path:'admin-list-projet' , component:AdminListProjetComponent},
 
+
+  
+
+
+
+
   {path:'ListUser',component:ListUserComponent},
+
 
 
   {path:'**' , component:NotFoundComponent}
