@@ -35,6 +35,18 @@ const routes:Routes = [
   {path:'admin-list-projet' , component:AdminListProjetComponent}
 ];
 
+
+  
+
+
+  
+
+
+
+
+  
+
+
   
   @NgModule({
     imports:[RouterModule.forRoot(routes)],
