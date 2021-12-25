@@ -36,7 +36,7 @@ const routes:Routes = [
 ];
 
 
-  {path:'admin-list-projet' , component:AdminListProjetComponent},
+  
 
 
   
@@ -44,12 +44,12 @@ const routes:Routes = [
 
 
 
-  {path:'ListUser',component:ListUserComponent},
+  
 
 
 
-  {path:'**' , component:NotFoundComponent}
-];
+  
+
  
 
   
