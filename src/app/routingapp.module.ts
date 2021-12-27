@@ -34,8 +34,6 @@ const routes:Routes = [
   {path:'ListUser',component:ListUserComponent},
   {path:'admin-list-projet' , component:AdminListProjetComponent}
 ];
-
-  
   @NgModule({
     imports:[RouterModule.forRoot(routes)],
     exports:[RouterModule],
