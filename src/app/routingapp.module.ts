@@ -16,6 +16,7 @@ import { AdminListProjetComponent } from './admin-list-projet/admin-list-projet.
 import { NotFoundComponent } from './not-found/not-found.component';
 
 import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -49,7 +50,7 @@ const routes:Routes = [
 
   
   @NgModule({
-    imports:[RouterModule.forRoot(routes)],
+    imports:[RouterModule.forRoot(routes),FormsModule],
     exports:[RouterModule],
     declarations: [
      ProjetComponent,
