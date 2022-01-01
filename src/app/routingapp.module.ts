@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
 
+import { AppComponent } from './app.component';
 import { ProjetComponent } from './projet/projet.component';
 
 import { ProfilComponent } from './profil/profil.component';
@@ -17,6 +19,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
+//import { LoginComponent } from './login/login.component';
+//import { RegisterComponent } from './register/register.component';
+
 
 
 
@@ -28,7 +33,8 @@ const routes:Routes = [
   {path:'projet-list-cards',component:ProjetListCardsComponent},
 
   {path:'profil',component:ProfilComponent},
-
+  //{path:'login',component:LoginComponent},
+  //{path:'register',component:RegisterComponent},
   {path:'workspace', component:WorkspaceComponent},
 
 
@@ -37,12 +43,8 @@ const routes:Routes = [
 ];
 
 
-  
-
-
-  
   @NgModule({
-    imports:[RouterModule.forRoot(routes),FormsModule],
+    imports:[RouterModule.forRoot(routes),FormsModule,BrowserModule],
     exports:[RouterModule],
     declarations: [
      ProjetComponent,
@@ -52,7 +54,9 @@ const routes:Routes = [
      NotFoundComponent,
      ListUserComponent,
      AdminListProjetComponent,
-     ProjetListCardsComponent
+     ProjetListCardsComponent,
+     //LoginComponent,
+     //RegisterComponent
     ]
 })
 export class RoutingappModule { }

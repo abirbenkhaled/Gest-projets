@@ -1,76 +1,36 @@
 <div class="container">
-  <div class="center1">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-duration="800">
-          <div class="post-content text-sm-right">
-            <h3><a href="#">Projet n°1</a></h3>
-            <p><a href="#">Description</a></p>
-            <a class="btn btn-primary" target="__blank"
-              href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
 
+  <div class="row">
 
-          </div>
-          <div class="post-thumb">
-            <img class="img-fluid img" src="assets/images/post10.jpg" alt="Post 1" >
-          </div>
-
-        </div>
-      </div>
-      <!-- ---------- -->
-      <div class="col-lg-6">
-        <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-duration="800">
-          <div class="post-content text-sm-right">
-            <h3><a href="#">Projet n°1</a></h3>
-            <p><a href="#">Description</a></p>
-            <a class="btn btn-primary" target="__blank"
-              href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
-
-
-          </div>
-          <div class="post-thumb">
-            <img class="img-fluid img" src="assets/images/post10.jpg" alt="Post 1">
+    <div class="col-lg-6" *ngFor="let projet of projects;">
+      <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-duration="800">
+        <div class="post-content text-sm-right">
+          <div class="row">
+            <div class="row">
+              <div class="col">
+                <h3><a href="#">{{projet.Title}}</a></h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3><a href="#">{{projet.Description}}</a></h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a class="btn btn-primary" target="__blank"
+                  href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
+              </div>
+            </div>
           </div>
 
         </div>
-      </div>
-      <!-- ---------- -->
-      <div class="col-lg-6">
-        <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-duration="800">
-          <div class="post-content text-sm-right">
-            <h3><a href="#">Projet n°1</a></h3>
-            <p><a href="#">Description</a></p>
-            <a class="btn btn-primary" target="__blank"
-              href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
-
-
-          </div>
-          <div class="post-thumb">
-            <img class="img-fluid img" src="assets/images/post10.jpg" alt="Post 1">
-          </div>
-
-        </div>
-      </div>
-      <!-- ---------- -->
-      <div class="col-lg-6">
-        <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-duration="800">
-          <div class="post-content text-sm-right">
-            <h3><a href="#">Projet n°1</a></h3>
-            <p><a href="#">Description</a></p>
-            <a class="btn btn-primary" target="__blank"
-              href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
-
-
-          </div>
-          <div class="post-thumb">
-            <img class="img-fluid img" src="assets/images/post10.jpg" alt="Post 1">
-          </div>
-
+        <div class="post-thumb">
+          <img class="img-fluid img" src="assets/images/post10.jpg" alt="Post 1">
         </div>
       </div>
     </div>
   </div>
-
   <div class="center">
 
     <div class="row">
@@ -84,7 +44,8 @@
                 <h6 class="mb-0">Project Name</h6>
               </div>
               <div class="col-sm-9 text-secondary">
-                <input type="text" class="form-control" name="name" [(ngModel)]="project.name" required placeholder="Project Name">
+                <input type="text" class="form-control" name="name" [(ngModel)]="project.Title" required
+                  placeholder="Project Name">
               </div>
             </div>
             <hr>
@@ -93,13 +54,13 @@
                 <h6 class="mb-0">Category</h6>
               </div>
               <div class="col-sm-9 text-secondary">
-                
-                <select  name="category" [(ngModel)]="project.category" class="form-select">
+
+                <select name="category" [(ngModel)]="project.Category" class="form-select">
                   <option value="" selected>choose a category</option>
                   <option value="informatique">informatique</option>
                   <option value="commerce">commerce</option>
                   <option value="mechanique">mechanique</option>
-                  
+
                 </select>
               </div>
             </div>
@@ -109,8 +70,8 @@
                 <h6 class="mb-0">Description</h6>
               </div>
               <div class="col-sm-9 text-secondary">
-                <textarea type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="description" placeholder=""
-                  [(ngModel)]="project.description" required></textarea>
+                <textarea type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  name="description" placeholder="" [(ngModel)]="project.Description" required></textarea>
               </div>
             </div>
             <hr>
@@ -119,7 +80,8 @@
                 <h6 class="mb-0">Date</h6>
               </div>
               <div class="col-sm-9 text-secondary">
-                <input type="date" class="form-control" aria-describedby="emailHelp" [(ngModel)]="project.date" required name="date">
+                <input type="date" class="form-control" aria-describedby="emailHelp" [(ngModel)]="project.FinishDate"
+                  required name="date">
               </div>
             </div>
             <hr>
@@ -129,7 +91,8 @@
             <hr>
             <div class="row">
               <div class="col-sm-12">
-                <button type="submit" class="btn btn-primary" target="__blank" (click)="addProject()" >Add Project</button>
+                <button type="submit" class="btn btn-primary" target="__blank" (click)="addProject()">Add
+                  Project</button>
 
               </div>
             </div>
@@ -140,4 +103,6 @@
     </div>
 
   </div>
+
+
 </div>
