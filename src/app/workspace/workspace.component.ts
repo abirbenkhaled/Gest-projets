@@ -29,7 +29,7 @@ export class WorkspaceComponent implements OnInit {
     }
     else{
       this.message ="Project added successfully"
-      this.alert ="alert alert-success"
+      this.alert ="alert alert-success"   
     }
   }
 
