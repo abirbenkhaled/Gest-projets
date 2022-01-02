@@ -34,6 +34,7 @@ export class ProfilComponent implements OnInit {
 
 
       this.user = this.data[0]
+      this.user.password=null
       console.log(this.user)
     })
   }
