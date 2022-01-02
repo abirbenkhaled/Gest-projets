@@ -11,12 +11,12 @@
         <div class="col-md-10 offset-md-1 features-holder">
           <div class="row">
             <!-- Features Item -->
-            <div class="col-md-4 col-sm-12 text-center mt-4" *ngFor="let projet of projects;">
+            <div class="col-md-4 col-sm-12 text-center mt-4" *ngFor="let projet of projects">
               <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up" id="projet._id" >
                 <div class="my-4">
                   <i class="lnr lnr-cog fs-40"></i>
                 </div><br>
-                <button class="btn btn-secondary" style="margin: 5px;">Edit </button>
+                <button class="btn btn-secondary" style="margin: 5px;" routerLink="/addDetails/{{projet._id}}">Edit </button>
 
                 <button class="btn btn-secondary" style="margin: 5px;" (click)="delete(projet._id)">Delete </button>
                 <br>
@@ -26,10 +26,9 @@
                   <div class="card-header" >
                     To Do
                   </div><br>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                  <ul class="list-group list-group-flush" >
+                    <li class="list-group-item"></li>
+
                   </ul>
                 </div>
 
@@ -40,9 +39,9 @@
                     Doing
                   </div><br>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item" ></li>
+                    <!-- <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li> -->
                   </ul>
                 </div><br>
                 <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
@@ -50,9 +49,9 @@
                     Done
                   </div><br>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item" ></li>
+                    <!-- <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li> -->
                   </ul>
                 </div>
               </div>
