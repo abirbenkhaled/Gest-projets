@@ -23,6 +23,8 @@ import { FormsModule } from '@angular/forms';
 //import { RegisterComponent } from './register/register.component';
 //import { AddDetailsComponent } from './add-details/add-details.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -35,7 +37,7 @@ const routes:Routes = [
   {path:'projet-list-cards',component:ProjetListCardsComponent},
 
   {path:'profil',component:ProfilComponent},
-  //{path:'login',component:LoginComponent},
+  {path:'login',component:LoginComponent},
   //{path:'register',component:RegisterComponent},
   {path:'workspace', component:WorkspaceComponent},
   //{path:'addDetails/:_id', component:AddDetailsComponent},
@@ -58,6 +60,8 @@ const routes:Routes = [
      ListUserComponent,
      AdminListProjetComponent,
      ProjetListCardsComponent,
+     LoginComponent,
+     RegisterComponent,
      //LoginComponent,
     // RegisterComponent,
      //AddDetailsComponent,
