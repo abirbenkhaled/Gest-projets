@@ -21,6 +21,8 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 //import { LoginComponent } from './login/login.component';
 //import { RegisterComponent } from './register/register.component';
+//import { AddDetailsComponent } from './add-details/add-details.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
@@ -36,6 +38,7 @@ const routes:Routes = [
   //{path:'login',component:LoginComponent},
   //{path:'register',component:RegisterComponent},
   {path:'workspace', component:WorkspaceComponent},
+  //{path:'addDetails/:_id', component:AddDetailsComponent},
 
 
   {path:'ListUser',component:ListUserComponent},
@@ -56,7 +59,9 @@ const routes:Routes = [
      AdminListProjetComponent,
      ProjetListCardsComponent,
      //LoginComponent,
-     //RegisterComponent
+    // RegisterComponent,
+     //AddDetailsComponent,
+     
     ]
 })
 export class RoutingappModule { }
